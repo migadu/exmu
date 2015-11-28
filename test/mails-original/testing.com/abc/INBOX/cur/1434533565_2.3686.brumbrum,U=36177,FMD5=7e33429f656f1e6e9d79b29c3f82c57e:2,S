@@ -1,0 +1,720 @@
+Return-Path: emsg-992f-22b77-replies@enews-airfrance.com
+Received: from smtp2.enews-airfrance.com ([192.86.55.235]) by mx-ha.gmx.net
+ (mxgmx105) with ESMTP (Nemesis) id 0MLRJW-1Z5gv41YlW-000YOx for
+ <ojos@gmx.ch>; Wed, 17 Jun 2015 10:44:16 +0200
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=kb; d=enews-airfrance.com;
+ h=Date:From:Reply-To:Subject:To:Message-ID:List-Unsubscribe:Mime-Version:Content-Type:Content-Transfer-Encoding; i=contact-ch@enews-airfrance.com;
+ bh=yLvwE1lAoAGmK19PHgRlK/ywVwo=;
+ b=mc4FPnfZ0HQwRt4h+3Riw8kmJbtY3DpGzOaIxqD8+H3fcyROKMf2kqeIJfxpS8CIiSw3ini+6Y1Q
+   MzBZ/k7Ud6cGPT+KUwv6qX0ZPPvjNHyvhrb5brYWmuPkrxjlNu28u+6ppRKZlKtbf5G58y3QAeIK
+   gG/ruduGTElG3TEh5e4=
+Received: from ukmailout01.em.unica.net (10.140.36.16) by enews-airfrance.com id hg4pm00u8qou for <ojos@gmx.ch>; Wed, 17 Jun 2015 08:40:25 +0000 (envelope-from <emsg-992f-22b77-replies@enews-airfrance.com>)
+Received: from ukmme01.em.unica.net (10.140.36.18) by ukmailout01.em.unica.net id hg4p7i0u8qot for <ojos@gmx.ch>; Wed, 17 Jun 2015 08:40:25 +0000 (envelope-from <emsg-992f-22b77-replies@enews-airfrance.com>)
+Date: Wed, 17 Jun 2015 08:40:25 +0000
+From: "Air France Switzerland" <contact-ch@enews-airfrance.com>
+Reply-To: "" <noreply-ch@airfrance.com>
+Subject: =?UTF-8?Q?=E2=9C=88_WOW!_Today,_Hawaii!?=
+To: <ojos@gmx.ch>
+x-emsg-mtaselection: prod_6_enews-airfrance.com
+Message-ID: <emsg.992f.22b77.14e00ad2a32@ukmme01.em.unica.net>
+Feedback-ID: enews-airfrance.com:10103-992f:emsg-x
+List-Unsubscribe: <mailto:DSME-1FC9DD8CC49633B856BE43B450EC747C14098C94609F91F1@enews-airfrance.com>
+Mime-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Envelope-To: <ojos@gmx.ch>
+X-GMX-Antispam: 0 (Mail was not recognized as spam); Detail=V3;
+X-GMX-Antivirus: 0 (no virus found)
+X-UI-Filterresults: notjunk:1;V01:K0:lq2iNYx5ajY=:Z3Z8sJhOQUSvnA4fn/cwxnh8o6
+ R/5uxz84i0qsVcTJldPGadYrA3swpaMGrzj/yMpsRoLOWtWAwp6Bk3DhS2WzB8KQevwa5t7FH
+ cwJ0qmJZ//l81/V7rbLAIsk8k0z5h6biMK06AiLFLpp4YGDi6edSpKgbRocLittOCa92ephD4
+ 6HL/IDIq4djS6ct28YbHCoFFziOY3uVlW+UYUmEdljifv6oyA69i8c3sc6aan9yys43bWihSc
+ X83GUCmaG/QF5A1JjhIHVgr5L25pGMPTMOS333i1ksKFHN36GN5wgkcyeHLw5qSMQcCy4Uvtm
+ eNuJastJa8ueitqKB+jMpRHDbpolC+wHB0gchoQUREUoR+DcFTi9TeO/sCkdTm89XbbhnDq7E
+ 7YvFmFO0vyuH4AffXFttmMFf33+12MGTRK5aLGCsQGsBGhjhudTclfPLRHyyqN4SZ64gHNqe7
+ l1PsemiOziYDZqNGqTFJY7A9bCgNzIfU+wZyJRSEb8sWUvfCJUMqtvypRCiqYTEPfX7otiG24
+ SJs4raqBIxf4iqWfR8DnSy7ri9S9+DrFTl6KNTl0z8RL3N03lzb12RBTUynomEvUGp7iCO8It
+ rutC5DWkJAapZtH+ZdPp0tXxAJRJ0XzWw6HqwjEaurF0Mf+l+n7XOqqmQ/fFXT9EeyKapKlte
+ bG6ea71Z7VGcZb69mafqKReXA0h1P7ymRd2r64O0F27b5g5eLXH/v8RMxerA1ydDY6G0DoN+h
+ FiYaRo4iUBOKUa+FWyO5KmU37/01lw//K13fSzfJ3fs68Pj15laNBCKel1VShmUjvLsrcBdhi
+ n5CwuCK6YxfhRSK8EkujziP2n8yTFlvfBUGMWcW1UWtB++I5cFRBFDa2pyXUAzwycE599m1Ye
+ ixahCID2+ox4OYHBqjRu77+2eDBxy2PWgyoGW9Pec2JmJ2Wis80yU3P9vnSPTt9t2ue85p62L
+ bCjIZ7eeukW72S3sMNHMfhQEngMTTH0D1+Fyzkgm6vkN+k6xiOORhcXThVDj+W6bLbC0oROIo
+ kHJn2HxOzV4r8WTvqlc0taYSxCjo4S5WihFpTLODuT1ty4vGvoL0gXwvwNh889NKaU77vahuG
+ 5vTYPMoEMCUwDMSr8hwo6ol1urBdK7SQuWMXA6pDKenD7O42fprzfPALCaLGSWxCU6GxQQg2M
+ RoYr9N2N9YcVcV2R3LR4BQqKdyyPX5HTw/tryojd2Fyyd0KhsaoYKuVCbkcOqniR62RiCMIxJ
+ pupt1REFT34ch9qDe0WoxlL4ln+rrBkYf/hCDgLFCqbrFiLkbCP9i/pXHaxda4j+pOzXfjzdG
+ rE9MNxJTNsj1q9bVZXjh1HrXz9k87pVj+HGS413GUKlSBVxYkpJouGJ4z2dOrfdiR9r7MdbNb
+ Hz1YxPfdLnl8tWTUw==
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta charset=3D"utf-8">
+<title>Air France</title>
+<style type=3D"text/css">
+img {
+display: block;
+}
+#outlook a {
+padding: 0;
+}
+table {
+border-collapse:collapse;=20
+mso-table-lspace:0pt;=20
+mso-table-rspace:0pt;
+}
+body {
+width: 100% !important;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+margin: 0;
+padding: 0;
+}
+.ReadMsgBody {
+width: 100%;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font,=
+ .ExternalClass td, .ExternalClass div {
+line-height: 100%;
+}
+.yshortcuts, .yshortcuts a, .yshortcuts a:link, .yshortcuts a:visited, .ysh=
+ortcuts a:hover, .yshortcuts a span {
+color: black;
+text-decoration: none !important;
+border-bottom: none !important;
+background: none !important;
+}
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) =
+{
+*[class].hide {
+display: none !important;
+}
+*[class].resize {
+width: 320px !important;
+}
+*[class].aCenter {
+text-align: center !important;
+width: 320px !important;
+}
+*[class].separateur20 {
+height: 20px !important;
+width: 320px!important;
+}
+*[class].separateur {
+border-top: 1px #CCC solid !important;
+width: 320px!important;
+height: 20px !important;
+}
+*[class].block {
+display: block !important;
+width: 320px !important;=09
+}
+}
+</style>
+</head>
+<body bottommargin=3D"0" topmargin=3D"0" rightmargin=3D"0" leftmargin=3D"0"=
+ marginheight=3D"0" marginwidth=3D"0" alink=3D"#000001" vlink=3D"#000001" l=
+ink=3D"#000001" bgcolor=3D"#ffffff">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" alig=
+n=3D"center" bgcolor=3D"#ffffff">
+<tr>
+<td align=3D"left" valign=3D"top">
+<img style=3D"display: inline;" border=3D"0" src=3D"http://airfrance.rnve.c=
+om/r.ashx?cc=3DpxVisu&nc=3Dfb&cm=3DpxVisu&nm=3DpxVisu&im=3D1&nme=3D0&m=3D11=
+239&dr=3D2013-04-30&e=3Dojos@gmx.ch" width=3D"1" height=3D"1" />
+<img src=3D"http://tc.airfrance.com/v/?tcs=3D324&chn=3Dcommercial-emailing&=
+src=3Dunica&cmp=3D047&ctycmp=3DCH&emtype=3DB2C&seg=3DWW&lng=3Den&ltype=3DSP=
+_pxl&otype=3DSP_pxl" border=3D"0" width=3D"1" height=3D"1">
+
+</td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"599" class=
+=3D"resize">
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"font-family:arial;font-size:10=
+px;padding-bottom:10px; color:#002454;">
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D2&p=3DtF749C3932DFB4EC47B205635FC28F5C=
+5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D39=
+0DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34D=
+3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D"=
+_blank"  style=3D"color:#4492fe; font-size:11px; text-decoration:none"><u><=
+b>Feel like traveling on Wednesday !</b></u></a>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+<tr>
+<td align=3D"center" valign=3D"middle">
+<!--[if mso]><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><t=
+d><![endif]-->
+<table cellbradding=3D"0" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"left" width=3D"290">
+<tr>
+<td height=3D"15"></td>
+</tr>
+<tr>
+<td class=3D"aCenter"><a href=3D"http://content.enews-airfrance.com/emessag=
+eIRS/servlet/IRSL?v=3D5&a=3D10103&r=3D39215&m=3D142199&l=3D6&p=3DtF749C3932=
+DFB4EC47B205635FC28F5C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A72=
+8AE50D83D6B4CFACE28D390DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE188=
+77A1F3172F1B9A6BF1B34D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=
+=3D2457282.0" target=3D"_blank"><img src=3D"http://mm.cache.coltfrance.com/=
+AirFrance_CRM2/img/Mailing/02363/AF-Enews_EarlyBird_640_B_r3_c1.jpg" alt=3D=
+"Air France" align=3D"middle" width=3D"280" height=3D"32" style=3D"display:=
+inline" border=3D"0" /></a></td>
+</tr>
+<tr>
+<td height=3D"15" class=3D"hide"></td>
+</tr>
+</table>
+<!--[if mso]></td><td><![endif]-->
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"right" cel=
+lbradding=3D"0" class=3D"resize" width=3D"300">
+<tr>
+<td align=3D"right" class=3D"hide"><a href=3D"http://content.enews-airfranc=
+e.com/emessageIRS/servlet/IRSL?v=3D5&a=3D10103&r=3D39215&m=3D142199&l=3D7&p=
+=3DtF749C3932DFB4EC47B205635FC28F5C5BFAA7DB97CDE13B2C9639A32D42274A059A73EA=
+FC87D29AA4A728AE50D83D6B4CFACE28D390DAA006B649207A2ED342C9EE912D62E4ADED9C9=
+C9E71699BE18877A1F3172F1B9A6BF1B34D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C=
+2EE&e=3D2&x=3D2457282.0" target=3D"_blank"><img src=3D"http://e.cdn.1000mer=
+cis.com/AirFrance_CRM2/img/Mailing/11231/header_en.jpg" width=3D"300" style=
+=3D"display:block" border=3D"0" /></a></td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top"><table width=3D"100%" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0">
+<tr>
+<td valign=3D"top" align=3D"center">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td valign=3D"top" align=3D"center">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td valign=3D"top" align=3D"center">
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D15&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D3=
+90DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34=
+D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D=
+"_blank"><img src=3D"http://e.cdn.1000mercis.com/AirFrance_CRM2/img/Mailing=
+/11231/vp.jpg" alt=3D"WOW ! It's Wednesday !" width=3D"600" class=3D"resize=
+" style=3D"display:inline-block" border=3D"0" /></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"10">&nbsp;</td>
+</tr>
+<tr>
+<td><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td valign=3D"top" align=3D"center">
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D16&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D3=
+90DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34=
+D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D=
+"_blank"><img src=3D"http://e.cdn.1000mercis.com/AirFrance_CRM2/img/Mailing=
+/11231/haut_en.jpg" alt=3D"" width=3D"600" class=3D"resize" style=3D"displa=
+y:inline-block" border=3D"0" /></a>
+</td>
+</tr>
+  <tr>
+    <td width=3D"600" height=3D"125" align=3D"center" valign=3D"middle" bgc=
+olor=3D"#f4f3f2" class=3D"resize" style=3D" vertical-align:middle; font-fam=
+ily:Arial; font-size:37px; color:#002454;" ><a href=3D"http://content.enews=
+-airfrance.com/emessageIRS/servlet/IRSL?v=3D5&a=3D10103&r=3D39215&m=3D14219=
+9&l=3D17&p=3DtF749C3932DFB4EC47B205635FC28F5C5BFAA7DB97CDE13B2C9639A32D4227=
+4A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D390DAA006B649207A2ED342C9EE912D6=
+2E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34D3778F1D71ACFC9DDAF6C2907B880F2=
+2BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D"_blank"  style=3D" font-family=
+:Arial; font-size:37px; color:#002454; text-decoration:none;"><b>Honolulu f=
+rom 1099 CHF*</b></a></td>
+  </tr>
+<tr>
+<td align=3D"center" valign=3D"top" bgcolor=3D"#F4F3F2"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"150">
+<tr>
+<td valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"150">
+<tr>
+<td align=3D"center" valign=3D"middle" width=3D"150" height=3D"45" bgcolor=
+=3D"#ff0000" style=3D"font-family:Arial; font-size:14px; color:#ffffff; ver=
+tical-align:middle;">
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D18&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D3=
+90DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34=
+D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D=
+"_blank" style=3D"font-size:14px; color:#ffffff; text-decoration:none; text=
+-transform:uppercase;"><strong>BOOK NOW</strong></a>
+</td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+  <tr>
+    <td height=3D"23" bgcolor=3D"#F4F3F2">&nbsp;</td>
+  </tr>
+  <tr>
+<td valign=3D"top" align=3D"center">
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D19&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2655F95BCB649945C4A728AE50D83D6B4CFACE28D390DAA006B649207A=
+2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34D3778F1D71ACFC9D=
+DAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D"_blank"><img sr=
+c=3D"http://e.cdn.1000mercis.com/AirFrance_CRM2/img/Mailing/11231/bas.jpg" =
+alt=3D"" width=3D"600" class=3D"resize" style=3D"display:inline-block" bord=
+er=3D"0" /></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top">=EF=BB=BF=EF=BB=BF<table border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"font-family:Arial; font-size:1=
+3px; color:#002454;">
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D30&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D3=
+90DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34=
+D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D=
+"_blank" style=3D"font-family:Arial; font-size:13px; color:#002454; text-de=
+coration:none;">
+<font style=3D"font-size:45px"><b>WOW!</b></font>
+<br />
+<font style=3D" font-size:15px; text-transform:uppercase;"><b>Wild Online W=
+ednesday</b></font>
+<br />
+<font style=3D"font-size:15px;">1 destination, 1 fare, 1 day a week </font>
+<br /><br />
+The Wow: It is your weekly rendezvous with a dream destination at a fare ne=
+ver seen before.<br /><br />
+To be informed on the WOW destination every Wednesday, follow us on=20
+</a>
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D31&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2655F95BCB649945C4A728AE50D83D6B4CFACE28D390DAA006B649207A=
+2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34D3778F1D71ACFC9D=
+DAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D"_blank" style=
+=3D"font-family:Arial; font-size:13px; color:#002454; text-decoration:none;=
+"><u>Facebook</u></a>
+
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D32&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D3=
+90DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34=
+D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D=
+"_blank" style=3D"font-family:Arial; font-size:13px; color:#002454; text-de=
+coration:none;">or visit our homepage </a>
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D33&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D3=
+90DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34=
+D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D=
+"_blank" style=3D"font-family:Arial; font-size:13px; color:#002454; text-de=
+coration:none;">
+<u>airfrance.ch</u></a>.
+<br /><br />
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D34&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D3=
+90DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34=
+D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D=
+"_blank" style=3D"font-family:Arial; font-size:13px; color:#002454; text-de=
+coration:none;"><b>> <u>More Informations</u></b></a>
+
+
+</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top">&nbsp;</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top">&nbsp;</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top">=EF=BB=BF=EF=BB=BF<table border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" align=3D"left">
+<tr>
+<td><!--[if mso]><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><t=
+r><td><![endif]-->
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" widt=
+h=3D"279" class=3D"aCenter">
+<tr>
+<td valign=3D"top" align=3D"center" width=3D"279"><a href=3D"http://content=
+.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D5&a=3D10103&r=3D39215&m=
+=3D142199&l=3D44&p=3DtF749C3932DFB4EC47B205635FC28F5C5BFAA7DB97CDE13B2C9639=
+A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D390DAA006B649207A2ED342C=
+9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34D3778F1D71ACFC9DDAF6C29=
+07B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D"_blank"><img src=3D"ht=
+tp://e.cdn.1000mercis.com/AirFrance_CRM2/img/Mailing/11231/trigger.jpg" alt=
+=3D"WOW" width=3D"279" style=3D"display:block" border=3D"0" /></a>
+</td>
+</tr>
+<tr><td height=3D"60">&nbsp;</td></tr>
+</table>
+<!--[if mso]></td><td><![endif]-->
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"right" wid=
+th=3D"320" class=3D"aCenter">
+<tr>
+<td width=3D"15" class=3D"hide"></td>
+<td align=3D"left" valign=3D"top">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td class=3D"separateur20"></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"font-family:Arial; font-size:13p=
+x; color:#051039;">
+<strong><a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/I=
+RSL?v=3D5&a=3D10103&r=3D39215&m=3D142199&l=3D45&p=3DtF749C3932DFB4EC47B2056=
+35FC28F5C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4C=
+FACE28D390DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9=
+A6BF1B34D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" t=
+arget=3D"_blank" style=3D"text-decoration:none; color:#051039; font-size:18=
+px;">
+WELCOME TO HAWAII</a></strong>
+<br /><br />
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"font-family:Arial; font-size:13p=
+x; color:#051039; padding-bottom:10px; text-align:justify;">
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D46&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D3=
+90DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34=
+D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D=
+"_blank" style=3D"text-decoration:none; color:#051039;">
+Discover Hawaii from 1099 CHF*!
+Find all our discounted fares on <u>airfrance.ch</u>. Hawaii has it all - f=
+rom tropical blue lagoons, beautiful waterfalls, lush rainforests, sea clif=
+fs and serene mountains, to active volcanoes and even snow. </a></td>
+</tr>
+<tr>
+<td valign=3D"top" align=3D"right">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"180">
+<tr>
+<td valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"180">
+<tr>
+<td align=3D"center" valign=3D"middle" width=3D"180" height=3D"40" bgcolor=
+=3D"#ff0000" style=3D"font-family:Arial; font-size:13px; color:#ffffff; ver=
+tical-align:middle;">
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D47&p=3DtF749C3932DFB4EC47B205635FC28F5=
+C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D3=
+90DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34=
+D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D=
+"_blank" style=3D"font-size:14px; color:#ffffff; text-decoration:none;"><st=
+rong>BOOK NOW</strong></a>
+</td>
+</tr>
+</table></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td height=3D"35"></td></tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top">&nbsp;</td>
+</tr>
+<tr>
+<td height=3D"35"></td>
+</tr>
+</table>
+</td></tr>
+</table>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" alig=
+n=3D"center" bgcolor=3D"#f4f3f2">
+<tr>
+<td align=3D"center" valign=3D"top">
+
+<!-- -->
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" class=
+=3D"resize">
+<tr>
+<tr>
+<td valign=3D"top" height=3D"40"></td>
+</tr>
+<tr>
+<td valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%" class=3D"aCenter">
+<tr>
+<td align=3D"left" valign=3D"top"><img src=3D"http://mm.cache.coltfrance.co=
+m/AirFrance_CRM2/img/Mailing/02363/AF-Enews_EarlyBird_640_B_r48_c1.jpg" alt=
+=3D"" height=3D"22" style=3D"display:block" border=3D"0" /></td>
+<td valign=3D"top" height=3D"22" class=3D"hide"></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" height=3D"40"></td>
+</tr>
+<tr>
+<tr>
+<td><!--[if mso]><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><t=
+r><td><![endif]-->
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" clas=
+s=3D"resize">
+<tr>
+<td valign=3D"top" class=3D"aCenter"><table border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0">
+<tr>
+<td valign=3D"top" width=3D"300" height=3D"84" align=3D"left" style=3D"font=
+-family:Arial; font-size:13px; color:#051039;" class=3D"aCenter">
+<strong>Become a Flying Blue member</strong><br>
+to receive a wide range of special benefits<br />
+when you fly with AIR FRANCE KLM.
+</td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"300" align=3D"left" height=3D"70" style=3D"font=
+-family:Arial; font-size:13px; color:#4492fe;" class=3D"aCenter">
+<strong><a href=3D"http://tc.airfrance.com/c/?tcs=3D324&chn=3Dcommercial-em=
+ailing&src=3Dunica&cmp=3D047&ctycmp=3DCH&emtype=3DB2C&seg=3DWW&lng=3Den&lty=
+pe=3DHD_perso&otype=3DBest_Offers&url=3Dhttp://www.airfrance.ch/CH/en/local=
+/core/engine/myaccount/action/DisplayFBRegisterAction.do?LinkKeyword=3D&zon=
+ing=3DHD_perso&WT.mc_id=3DG_CH_Email_unica_047&WT.tsrc=3Demail&WT.z_g=3Dbf5=
+a-1348-6539-fdae-f075-6771-96f2-9d3e" target=3D"_blank" style=3D"font-size:=
+13px; color:#4492fe; text-decoration:none;">&gt; <u>Join Flying Blue</u></a=
+><br>
+<a href=3D"http://tc.airfrance.com/c/?tcs=3D324&chn=3Dcommercial-emailing&s=
+rc=3Dunica&cmp=3D047&ctycmp=3DCH&emtype=3DB2C&seg=3DWW&lng=3Den&ltype=3DHD_=
+perso&otype=3DBest_Offers&url=3Dhttp://www.airfrance.ch/CH/en/common/util/f=
+orwardClusterAction.do?url=3Dfblue_welcome.htm&LinkKeyword=3D&zoning=3DHD_p=
+erso&WT.mc_id=3DG_CH_Email_unica_047&WT.tsrc=3Demail&WT.z_g=3Dbf5a-1348-653=
+9-fdae-f075-6771-96f2-9d3e" target=3D"_blank" style=3D"font-size:13px; colo=
+r:#4492fe; text-decoration:none;">&gt; <u>More information</u></a></strong>
+</td>
+</tr></table></td>
+</tr>
+</table><!--[if mso]></td><td valign=3D"top"><![endif]-->
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"right" cla=
+ss=3D"resize"><tr>
+<td valign=3D"top" width=3D"300" align=3D"left" style=3D"font-family:Arial;=
+ font-size:12px; color:#595959;" class=3D"aCenter">
+<strong>More details :</strong><br>
+=E2=80=A2 <a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet=
+/IRSL?v=3D5&a=3D10103&r=3D39215&m=3D142199&l=3D54&p=3DtF749C3932DFB4EC47B20=
+5635FC28F5C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B=
+4CFACE28D390DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1=
+B9A6BF1B34D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0"=
+ target=3D"_blank" style=3D"font-size:12px; color:#595959; text-decoration:=
+none;"><u>www.airfrance.ch</u></a>
+</td></tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+<tr>
+<td valign=3D"top" height=3D"21"></td>
+</tr>
+</table>
+
+
+</td></tr>
+</table>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" alig=
+n=3D"center" bgcolor=3D"#ffffff">
+<tr>
+<td align=3D"center" valign=3D"top">
+
+<!-- -->
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=
+=3D"resize">
+<tr>
+<tr>
+<td valign=3D"middle" align=3D"left" width=3D"100%" height=3D"55" style=3D"=
+font-family:Arial; font-size:18px; color:#fa3d6e; vertical-align:middle;" c=
+lass=3D"aCenter">
+<strong>Follow us</strong>
+</td>
+</tr>
+<tr>
+<td><table width=3D"170" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" a=
+lign=3D"left" class=3D"resize">
+<tr>
+<td><table cellbradding=3D"0" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" align=3D"left">
+<tr>
+<td align=3D"left">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"71" class=
+=3D"centerTable">
+<tr>
+<td valign=3D"top"><a href=3D"http://content.enews-airfrance.com/emessageIR=
+S/servlet/IRSL?v=3D5&a=3D10103&r=3D39215&m=3D142199&l=3D205&p=3DtF749C3932D=
+FB4EC47B205635FC28F5C5BFAA7DB97CDE13B2655F95BCB649945C4A728AE50D83D6B4CFACE=
+28D390DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF=
+1B34D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" targe=
+t=3D"_blank"><img src=3D"http://e.cdn.1000mercis.com/AirFrance_CRM2/img/Mai=
+ling/02628/img3_16.jpg" alt=3D"" width=3D"71" height=3D"24" style=3D"displa=
+y:block" border=3D"0" /></a></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"71" height=3D"10"></td>
+</tr>
+<tr>
+<td valign=3D"top">
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D210&p=3DtF749C3932DFB4EC47B205635FC28F=
+5C5BFAA7DB97CDE13B2583BB97DC6F4FA370B4A7AFFB92B0E1E&e=3D2&x=3D2457282.0" ta=
+rget=3D"_blank">
+<img src=3D"http://e.cdn.1000mercis.com/AirFrance_CRM2/img/Mailing/02628/im=
+g3_19.jpg" alt=3D"" width=3D"70" height=3D"24" style=3D"display:block" bord=
+er=3D"0" /></a>
+</td>
+</tr>
+</table>
+</td>
+<td width=3D"100" class=3D"hide"></td>
+</tr>
+<tr><td class=3D"separateur20"></td></tr>
+</table></td>
+</tr>
+</table>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" clas=
+s=3D"resize">
+<tr>
+<td valign=3D"top" width=3D"70" align=3D"center"><a href=3D"http://content.=
+enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D5&a=3D10103&r=3D39215&m=3D=
+142199&l=3D207&p=3DtF749C3932DFB4EC47B205635FC28F5C5BFAA7DB97CDE13B2C9639A3=
+2D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D390DAA006B649207A2ED342C9E=
+E912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B34D3778F1D71ACFC9DDAF6C2907=
+B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=3D"_blank"><img src=3D"http=
+://e.cdn.1000mercis.com/AirFrance_CRM2/img/Mailing/02363/AF-Enews_EarlyBird=
+_640_B_r53_c4.jpg" alt=3D"" width=3D"46" height=3D"58" style=3D"display:blo=
+ck" border=3D"0" /></a></td>
+<td valign=3D"middle" align=3D"left" width=3D"150" height=3D"58" style=3D"f=
+ont-family:Arial; font-size:12px; color:#4492fe; vertical-align:middle;">
+<a href=3D"http://content.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D=
+5&a=3D10103&r=3D39215&m=3D142199&l=3D207&p=3DtF749C3932DFB4EC47B205635FC28F=
+5C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83D6B4CFACE28D=
+390DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F3172F1B9A6BF1B3=
+4D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282.0" target=
+=3D"_blank" style=3D"font-size:12px; color:#4492fe; text-decoration:none;">=
+Access our special offers through our mobile site</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" height=3D"21"></td>
+</tr>
+</table>
+
+
+</td></tr>
+</table>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" alig=
+n=3D"center" bgcolor=3D"#f4f3f2">
+<tr>
+<td align=3D"center" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" class=
+=3D"aCenter">
+<tr>
+<td valign=3D"top" height=3D"30"></td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" alig=
+n=3D"center">
+<tr>
+<td valign=3D"top" style=3D"font-family:Arial; font-size:10px; color:#05103=
+9;" align=3D"left">
+*Fares are round-trip, all incl., from Geneva, subject to conditions and av=
+ailability. No connection via Los Angeles or San Francisco.=20
+<br />
+Only bookable on June 17th, 2015. Travel from August 17th until October 31s=
+t, 2015, from November 01st until December 07th, 2015 and from January, 07t=
+h until March, 11th, 2016. This rate is not available on all flights (avail=
+ability depends on passenger load factor of each flight).=20
+
+<br /><br />
+All details on <a href=3D"http://content.enews-airfrance.com/emessageIRS/se=
+rvlet/IRSL?v=3D5&a=3D10103&r=3D39215&m=3D142199&l=3D355&p=3DtF749C3932DFB4E=
+C47B205635FC28F5C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50=
+D83D6B4CFACE28D390DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F=
+3172F1B9A6BF1B34D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457=
+282.0" target=3D"_blank" style=3D"color:#051039; text-decoration:none"><u>w=
+ww.airfrance.ch</u></a>.=20
+<br /><br />
+
+AIR FRANCE is firmly committed to respecting your privacy. We don't share y=
+our information with any third party without your consent. For more informa=
+tion please <a href=3D"http://content.enews-airfrance.com/emessageIRS/servl=
+et/IRSL?v=3D5&a=3D10103&r=3D39215&m=3D142199&l=3D356&p=3DtF749C3932DFB4EC47=
+B205635FC28F5C5BFAA7DB97CDE13B2C9639A32D42274A059A73EAFC87D29AA4A728AE50D83=
+D6B4CFACE28D390DAA006B649207A2ED342C9EE912D62E4ADED9C9C9E71699BE18877A1F317=
+2F1B9A6BF1B34D3778F1D71ACFC9DDAF6C2907B880F22BAD79E01C2EE&e=3D2&x=3D2457282=
+.0" target=3D"_blank" style=3D"color:#051039; text-decoration:none;"><u>rea=
+d the AIR FRANCE Security Policy and Data Confidentiality Guideline</u>.</a=
+> Soci=C3=A9t=C3=A9 Air France, a public limited company with a capital of =
+EUR 126,748,775, whose head office is at Roissy-Charles de Gaulle, France -=
+ Bobigny Trade Register Nr. 420 495 178.
+<br /><br />
+If you do not wish to receive this newsletter anymore, <a href=3D"http://co=
+ntent.enews-airfrance.com/emessageIRS/servlet/IRSL?v=3D5&a=3D10103&r=3D3921=
+5&m=3D142199&l=3D357&p=3DtF749C3932DFB4EC47B205635FC28F5C5BFAA7DB97CDE13B2C=
+9639A32D42274A0899B194FE0EFD3902D1261389DA2690249D216B3827BC1F60C43DB2C3287=
+1B2011248E67EBF88A81F9FAA64EC0D485235C8ADBA76B73A69E81A2E2E5BD8E0ACE756F734=
+23751ED7E0900EFBA800BC573D512BF0C27DB6FC143C29E4B2448C5CE7843FE011F7001AC67=
+8DF3D0B793A6712DC7D07AD5BC71AB&e=3D2&x=3D2457282.0" target=3D"_blank" style=
+=3D"color:#051039;text-decoration:none"><u>unsubscribe here</u>.</a>
+
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" height=3D"25"></td>
+</tr>
+</table>
+</td></tr></table>
+<IMG width=3D"1" height=3D"1" src=3D"http://content.enews-airfrance.com/eme=
+ssageIRS/servlet/IRSO?v=3D5&a=3D10103&r=3D39215&m=3D142199&l=3D-1&e=3D2">
+
+<IMG width=3D"1" height=3D"1" src=3D"http://miq-p4-qa-em.unicaondemand.com/=
+C250R423A.gif?pvci=3D2954_4723_39215" /></body>
+</html>

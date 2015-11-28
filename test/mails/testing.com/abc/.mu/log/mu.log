@@ -1,0 +1,11 @@
+2015-11-28 21:20:30 [INFO] logging started
+2015-11-28 21:20:31 [INFO] deserialized contacts from cache /home/michael/Documents/Projects/elixir/exmu/test/mails/testing.com/abc/.mu/cache/contacts
+2015-11-28 21:20:31 [INFO] _MuStore: opened /home/michael/Documents/Projects/elixir/exmu/test/mails/testing.com/abc/.mu/xapian (batch size: 30000) for read-write
+2015-11-28 21:20:31 [INFO] index: processed: 8; updated/new: 8
+2015-11-28 21:20:31 [INFO] serialized contacts cache /home/michael/Documents/Projects/elixir/exmu/test/mails/testing.com/abc/.mu/cache/contacts
+2015-11-28 21:20:31 [INFO] closing xapian database with 8 document(s)
+2015-11-28 21:20:31 [INFO] logging stopped
+2015-11-28 21:20:31 [INFO] logging started
+2015-11-28 21:20:31 [INFO] _MuStore: opened /home/michael/Documents/Projects/elixir/exmu/test/mails/testing.com/abc/.mu/xapian read-only
+2015-11-28 21:20:31 [INFO] closing xapian database with 8 document(s)
+2015-11-28 21:20:31 [INFO] logging stopped
