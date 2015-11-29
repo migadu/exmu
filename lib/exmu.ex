@@ -36,6 +36,7 @@ defmodule Exmu do
     opts = Keyword.merge(@default_opts, opts)
     abs_mailbox_path = Path.expand(mailbox_path)
     abs_mu_dir_path = Path.expand(mu_dir_path)
+    :ok = File.mkdir_p abs_mu_dir_path
     case System.cmd "mu", ["index", "--maildir=#{abs_mailbox_path}", "--muhome=#{abs_mu_dir_path}"] do
       {_, 0} -> :ok
       {_, _} -> raise("Could not index #{abs_mu_dir_path} with muhome #{abs_mu_dir_path}")
