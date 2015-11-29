@@ -5,7 +5,7 @@ defmodule Exmu do
   def search(mu_dir_path, query, opts \\ []) do
     opts = Keyword.merge(@default_opts, opts)
     abs_mu_dir_path = Path.expand(mu_dir_path)
-    case System.cmd opts[:mu_bin_path], ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", query] do
+    case System.cmd opts[:mu], ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", query] do
       {res, 0} ->
         case opts[:format] do
           "xml" -> {:ok, res |> String.strip}
