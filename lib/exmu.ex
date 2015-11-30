@@ -1,11 +1,12 @@
 defmodule Exmu do
 
-  @default_opts [format: "xml", mu_bin_path: "/usr/bin/mu"]
+  @default_opts [format: "xml", mu_bin_path: "/usr/bin/mu", sortfield: "date"]
 
   def search(mu_dir_path, query, opts \\ []) do
     opts = Keyword.merge(@default_opts, opts)
     abs_mu_dir_path = Path.expand(mu_dir_path)
-    case System.cmd "mu", ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", query] do
+    mu_executable = opts[:mu_bin_path]
+    case System.cmd mu_executable, ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", query] do
       {res, 0} ->
         case opts[:format] do
           "xml" -> {:ok, res |> String.strip}
@@ -20,7 +21,8 @@ defmodule Exmu do
   def read_folder(mu_dir_path, folder, opts \\ []) do
     opts = Keyword.merge(@default_opts, opts)
     abs_mu_dir_path = Path.expand(mu_dir_path)
-    case System.cmd "mu", ["find", "--muhome=#{abs_mu_dir_path}", "maildir:/#{folder}", "--format=#{opts[:format]}", ""] do
+    mu_executable = opts[:mu_bin_path]
+    case System.cmd mu_executable, ["find", "--muhome=#{abs_mu_dir_path}", "maildir:/#{folder}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", ""] do
       {res, 0} ->
         case opts[:format] do
           "xml" -> {:ok, res |> String.strip }
@@ -36,8 +38,9 @@ defmodule Exmu do
     opts = Keyword.merge(@default_opts, opts)
     abs_mailbox_path = Path.expand(mailbox_path)
     abs_mu_dir_path = Path.expand(mu_dir_path)
+    mu_executable = opts[:mu_bin_path]
     :ok = File.mkdir_p abs_mu_dir_path
-    case System.cmd "mu", ["index", "--maildir=#{abs_mailbox_path}", "--muhome=#{abs_mu_dir_path}"] do
+    case System.cmd mu_executable, ["index", "--maildir=#{abs_mailbox_path}", "--muhome=#{abs_mu_dir_path}"] do
       {_, 0} -> :ok
       {_, _} -> raise("Could not index #{abs_mu_dir_path} with muhome #{abs_mu_dir_path}")
     end
