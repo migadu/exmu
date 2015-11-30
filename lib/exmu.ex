@@ -1,6 +1,6 @@
 defmodule Exmu do
 
-  @default_opts [format: "xml", mu_bin_path: "/usr/bin/mu", sortfield: "date"]
+  @default_opts [format: "xml", mu_bin_path: "/usr/local/bin/mu", sortfield: "date"]
 
   def search(mu_dir_path, query, opts \\ []) do
     opts = Keyword.merge(@default_opts, opts)
