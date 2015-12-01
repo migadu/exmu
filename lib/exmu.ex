@@ -6,7 +6,7 @@ defmodule Exmu do
     opts = Keyword.merge(@default_opts, opts)
     abs_mu_dir_path = Path.expand(mu_dir_path)
     mu_executable = opts[:mu_bin_path]
-    case System.cmd mu_executable, ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", query] do
+    case System.cmd mu_executable, ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", "--maxnum=100", query] do
       {res, 0} ->
         case opts[:format] do
           "xml" -> {:ok, res |> String.strip}
@@ -22,7 +22,9 @@ defmodule Exmu do
     opts = Keyword.merge(@default_opts, opts)
     abs_mu_dir_path = Path.expand(mu_dir_path)
     mu_executable = opts[:mu_bin_path]
-    case System.cmd mu_executable, ["find", "--muhome=#{abs_mu_dir_path}", "maildir:/#{folder}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", ""] do
+    command = ["find", "--muhome=#{abs_mu_dir_path}", "maildir:/#{folder}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", "--maxnum=100", ""]
+    IO.puts Enum.join(command, " ")
+    case System.cmd mu_executable, command do
       {res, 0} ->
         case opts[:format] do
           "xml" -> {:ok, res |> String.strip }
@@ -51,5 +53,40 @@ defmodule Exmu do
     query
       |> String.replace(";", "")
   end
+
+
+  @doc """
+  Returns the name of the folder on the server.
+  ## Examples
+      iex> Migadu.Manager.Webmail.Api.folder_mapping("Spam")
+      .Junk
+      iex> Migadu.Manager.Webmail.Api.folder_mapping("Inbox")
+      .
+  """
+  def folder_mapping(foldername) do
+    case foldername |> String.downcase do
+      # Inbox is on top directory in dovecot
+      ".inbox"   -> ""
+      "inbox"    -> ""
+      ".Inbox"   -> "."
+      # "drafts"  -> ".Drafts"
+      ".drafts"  -> "draft"
+      # "draft"   -> ".Drafts"
+      # "Draft"   -> ".Drafts"
+      # "spam"    -> ".Junk"
+      # "Spam"    -> ".Junk"
+      # "junk"    -> ".Junk"
+      # "Junk"    -> ".Junk"
+      # "sent"    -> ".Sent"
+      # "Sent"    -> ".Sent"
+      # "trash"   -> ".Trash"
+      # "Trash"   -> ".Trash"
+      # "archive" -> ".Archive"
+      # "Archive" -> ".Archive"
+      "."       -> "." # if we simply want the mailbox path
+      other  ->  foldername
+    end
+  end
+
 
 end
