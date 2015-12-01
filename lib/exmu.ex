@@ -49,6 +49,18 @@ defmodule Exmu do
   end
 
 
+  def contacts(mu_dir_path, query \\ "", opts \\ []) do
+    opts = Keyword.merge(@default_opts, opts)
+    abs_mu_dir_path = Path.expand(mu_dir_path)
+    mu_executable = opts[:mu_bin_path]
+    case System.cmd mu_executable, ["cfind", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", query] do
+      {res, 0} -> res
+      {_, 1} -> raise("Error with cfind. Mu index dir: #{abs_mu_dir_path}.")
+      {_, 2} -> []
+    end
+  end
+
+
   def clean_query(query) do
     query
       |> String.replace(";", "")
@@ -57,11 +69,6 @@ defmodule Exmu do
 
   @doc """
   Returns the name of the folder on the server.
-  ## Examples
-      iex> Migadu.Manager.Webmail.Api.folder_mapping("Spam")
-      .Junk
-      iex> Migadu.Manager.Webmail.Api.folder_mapping("Inbox")
-      .
   """
   def folder_mapping(foldername) do
     case foldername |> String.downcase do
