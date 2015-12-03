@@ -8,6 +8,9 @@ defmodule Exmu do
     abs_mu_dir_path = Path.expand(mu_dir_path)
     mu_executable = opts[:mu_bin_path]
     command = ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", "--maxnum=#{opts[:maxnum]}", "--sortfield=#{opts[:sortfield]}", opts[:other_mu_opts], query]
+    if opts[:debug] do
+      IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
+    end
     case System.cmd mu_executable, command do
       {res, 0} ->
         case opts[:format] do
@@ -25,6 +28,9 @@ defmodule Exmu do
     abs_mu_dir_path = Path.expand(mu_dir_path)
     mu_executable = opts[:mu_bin_path]
     command = ["find", "--muhome=#{abs_mu_dir_path}", "maildir:/#{folder}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", "--maxnum=#{opts[:maxnum]}", ""]
+    if opts[:debug] do
+      IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
+    end
     case System.cmd mu_executable, command do
       {res, 0} ->
         case opts[:format] do
