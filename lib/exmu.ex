@@ -1,12 +1,13 @@
 defmodule Exmu do
 
-  @default_opts [format: "xml", mu_bin_path: "/usr/local/bin/mu", sortfield: "date", maxnum: 10000]
+  @default_opts [format: "xml", mu_bin_path: "/usr/local/bin/mu",
+                sortfield: "date", maxnum: 10000, other_mu_opts: ""]
 
   def search(mu_dir_path, query, opts \\ []) do
     opts = Keyword.merge(@default_opts, opts)
     abs_mu_dir_path = Path.expand(mu_dir_path)
     mu_executable = opts[:mu_bin_path]
-    case System.cmd mu_executable, ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", "--maxnum=#{opts[:maxnum]}", query] do
+    case System.cmd mu_executable, ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", "--maxnum=#{opts[:maxnum]}, "--sortfield=#{opts[:sortfield]}", String.split(opts[:other_mu_opts], " ")", query] do
       {res, 0} ->
         case opts[:format] do
           "xml" -> {:ok, res |> String.strip}
