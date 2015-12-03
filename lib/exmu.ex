@@ -7,7 +7,8 @@ defmodule Exmu do
     opts = Keyword.merge(@default_opts, opts)
     abs_mu_dir_path = Path.expand(mu_dir_path)
     mu_executable = opts[:mu_bin_path]
-    case System.cmd mu_executable, ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", "--maxnum=#{opts[:maxnum]}, "--sortfield=#{opts[:sortfield]}", String.split(opts[:other_mu_opts], " ")", query] do
+    command = ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", "--maxnum=#{opts[:maxnum]}", "--sortfield=#{opts[:sortfield]}", opts[:other_mu_opts], query]
+    case System.cmd mu_executable, command do
       {res, 0} ->
         case opts[:format] do
           "xml" -> {:ok, res |> String.strip}
@@ -24,7 +25,6 @@ defmodule Exmu do
     abs_mu_dir_path = Path.expand(mu_dir_path)
     mu_executable = opts[:mu_bin_path]
     command = ["find", "--muhome=#{abs_mu_dir_path}", "maildir:/#{folder}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", "--maxnum=#{opts[:maxnum]}", ""]
-    IO.puts Enum.join(command, " ")
     case System.cmd mu_executable, command do
       {res, 0} ->
         case opts[:format] do
