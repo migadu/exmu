@@ -9,6 +9,7 @@ defmodule Exmu do
     mu_executable = opts[:mu_bin_path]
     command = ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", "--maxnum=#{opts[:maxnum]}", "--sortfield=#{opts[:sortfield]}", opts[:other_mu_opts], query]
     if opts[:debug] do
+      IO.puts "--- EXMU Debug ---"
       IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
     end
     case System.cmd mu_executable, command do
@@ -29,6 +30,7 @@ defmodule Exmu do
     mu_executable = opts[:mu_bin_path]
     command = ["find", "--muhome=#{abs_mu_dir_path}", "maildir:/#{folder}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", "--maxnum=#{opts[:maxnum]}", ""]
     if opts[:debug] do
+      IO.puts "--- EXMU Debug ---"
       IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
     end
     case System.cmd mu_executable, command do
@@ -48,11 +50,14 @@ defmodule Exmu do
     abs_mailbox_path = Path.expand(mailbox_path)
     abs_mu_dir_path = Path.expand(mu_dir_path)
     mu_executable = opts[:mu_bin_path]
-    :ok = File.mkdir_p abs_mu_dir_path
-    case System.cmd mu_executable, ["index", "--maildir=#{abs_mailbox_path}", "--muhome=#{abs_mu_dir_path}"] do
-      {_, 0} -> :ok
-      {_, _} -> raise("Could not index #{abs_mu_dir_path} with muhome #{abs_mu_dir_path}")
+    command = ["index", "--maildir=#{abs_mailbox_path}", "--muhome=#{abs_mu_dir_path}", opts[:other_mu_opts]]
+    if opts[:debug] do
+      IO.puts "--- EXMU Debug ---"
+      IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
     end
+    :ok = File.mkdir_p abs_mu_dir_path
+    :os.cmd(to_char_list("#{mu_executable} #{Enum.join(command, " ")}"))
+    :ok
   end
 
 
