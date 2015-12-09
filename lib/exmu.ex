@@ -24,14 +24,14 @@ defmodule Exmu do
       {:done, 2, res} -> # Wrong command
         case opts[:format] do
           "xml" -> IO.puts res; {:ok, "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<messages></messages>"}
-          "plain" -> IO.puts res; {:ok, []}
-          "json" -> IO.puts res; {:ok, []}
+          "plain" -> IO.puts res; {:ok, ""}
+          "json" -> IO.puts res; {:ok, "[]"}
         end
       {:done, 4, res} -> # No results found
         case opts[:format] do
           "xml" -> {:ok, "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<messages></messages>"}
-          "plain" -> {:ok, []}
-          "json" -> {:ok, []}
+          "plain" -> {:ok, ""}
+          "json" -> {:ok, "[]"}
         end
       {err, error_code, error_msg} -> IO.inspect err: err, error_code: error_code, error_msg: error_msg; {:error, []}
     end
@@ -57,10 +57,10 @@ defmodule Exmu do
       {:done, 4, res} -> # No results found
         case opts[:format] do
           "xml" -> {:ok, "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<messages></messages>"}
-          "plain" -> {:ok, []}
-          "json" -> {:ok, []}
+          "plain" -> {:ok, ""}
+          "json" -> {:ok, "[]"}
         end
-      {_, _, _} -> {:error, []}
+      {_, _, _} -> {:error, "[]"}
     end
   end
 
