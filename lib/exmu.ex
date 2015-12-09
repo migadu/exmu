@@ -12,14 +12,21 @@ defmodule Exmu do
       IO.puts "--- EXMU Debug ---"
       IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
     end
-    case System.cmd mu_executable, command do
-      {res, 0} ->
+
+    case :erlsh.run(to_char_list("#{mu_executable} #{Enum.join(command, " ")}")) do
+      {:done, 0, res} ->
         case opts[:format] do
-          "xml" -> {:ok, res |> String.strip}
-          "plain" -> {:ok, res |> String.strip |> String.split("\n")}
-          "json" -> {:ok, res |> String.strip |> String.split("\n")}
+          "xml" -> {:ok, to_string(res) |> String.strip}
+          "plain" -> {:ok, to_string(res) |> String.strip |> String.split("\n")}
+          "json" -> {:ok, to_string(res) |> String.strip |> String.split("\n")}
         end
-      {res, _} -> {:error, []}
+      {:done, 4, res} -> # No results found
+        case opts[:format] do
+          "xml" -> {:ok, "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<messages></messages>"}
+          "plain" -> {:ok, []}
+          "json" -> {:ok, []}
+        end
+      {_, _, _} -> {:error, []}
     end
   end
 
@@ -33,14 +40,20 @@ defmodule Exmu do
       IO.puts "--- EXMU Debug ---"
       IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
     end
-    case System.cmd mu_executable, command do
-      {res, 0} ->
+    case :erlsh.run(to_char_list("#{mu_executable} #{Enum.join(command, " ")}")) do
+      {:done, 0, res} ->
         case opts[:format] do
-          "xml" -> {:ok, res |> String.strip }
-          "plain" -> {:ok, res |> String.strip |> String.split("\n")}
-          "json" -> {:ok, res |> String.strip |> String.split("\n")}
+          "xml" -> {:ok, to_string(res) |> String.strip}
+          "plain" -> {:ok, to_string(res) |> String.strip |> String.split("\n")}
+          "json" -> {:ok, to_string(res) |> String.strip |> String.split("\n")}
         end
-      {res, _} -> {:error, []}
+      {:done, 4, res} -> # No results found
+        case opts[:format] do
+          "xml" -> {:ok, "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<messages></messages>"}
+          "plain" -> {:ok, []}
+          "json" -> {:ok, []}
+        end
+      {_, _, _} -> {:error, []}
     end
   end
 

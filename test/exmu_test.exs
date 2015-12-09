@@ -20,10 +20,10 @@ defmodule ExmuTest do
     mailbox_path = "test/mails/testing.com/abc/"
     mu_dir_path  = "test/mails/testing.com/abc/.mu"
     :ok = Exmu.index_emails(mailbox_path, mu_dir_path)
-    {:ok, res} = Exmu.read_folder(mu_dir_path, "INBOX", format: "plain")
-    assert Enum.count(res) == 2
+    {:ok, res} = Exmu.read_folder(mu_dir_path, "MyFolder", format: "plain")
+    assert Enum.count(res) == 1
     {:ok, res} = Exmu.read_folder(mu_dir_path, "", format: "plain")
-    assert Enum.count(res) == 6
+    assert Enum.count(res) == 5
   end
 
 
@@ -41,6 +41,30 @@ defmodule ExmuTest do
     mu_dir_path  = "test/mails/testing.com/abc/.mu"
     :ok = Exmu.index_emails(mailbox_path, mu_dir_path)
     {:ok, res} = Exmu.search(mu_dir_path, "tgv", format: "plain")
+    assert Enum.count(res) == 1
+  end
+
+
+  test "search with maildir" do
+    mailbox_path = "test/mails/testing.com/abc/"
+    mu_dir_path  = "test/mails/testing.com/abc/.mu"
+    :ok = Exmu.index_emails(mailbox_path, mu_dir_path)
+    {:ok, res} = Exmu.search(mu_dir_path, "Atrach* maildir:/MyFolder", format: "plain")
+    assert Enum.count(res) == 1
+  end
+
+
+  test "search with maildir and date" do
+    mailbox_path = "test/mails/testing.com/abc/"
+    mu_dir_path  = "test/mails/testing.com/abc/.mu"
+    :ok = Exmu.index_emails(mailbox_path, mu_dir_path)
+    {:ok, res} = Exmu.search(mu_dir_path, "Atrach* maildir:/MyFolder date:19700101..20151109", format: "plain")
+    assert Enum.count(res) == 0
+    {:ok, res} = Exmu.search(mu_dir_path, "Atrach* maildir:/MyFolder date:19700101..20151111", format: "plain")
+    assert Enum.count(res) == 1
+    {:ok, res} = Exmu.search(mu_dir_path, "Atrach* maildir:/MyFolder date:19700101..201511101100", format: "plain")
+    assert Enum.count(res) == 0
+    {:ok, res} = Exmu.search(mu_dir_path, "Atrach* maildir:/MyFolder date:19700101..201511101200", format: "plain")
     assert Enum.count(res) == 1
   end
 
