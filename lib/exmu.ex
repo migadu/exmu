@@ -7,9 +7,10 @@ defmodule Exmu do
     opts = Keyword.merge(@default_opts, opts)
     abs_mu_dir_path = Path.expand(mu_dir_path)
     mu_executable = opts[:mu_bin_path]
+    if query == "", do: query = "''"
     command = ["find", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", "--maxnum=#{opts[:maxnum]}", "--sortfield=#{opts[:sortfield]}", opts[:other_mu_opts], query]
     if opts[:debug] do
-      IO.puts "--- EXMU Debug ---"
+      IO.puts "--- EXMU Debug Search ---"
       IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
     end
 
@@ -20,13 +21,19 @@ defmodule Exmu do
           "plain" -> {:ok, to_string(res) |> String.strip |> String.split("\n")}
           "json" -> {:ok, to_string(res) |> String.strip |> String.split("\n")}
         end
+      {:done, 2, res} -> # Wrong command
+        case opts[:format] do
+          "xml" -> IO.puts res; {:ok, "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<messages></messages>"}
+          "plain" -> IO.puts res; {:ok, []}
+          "json" -> IO.puts res; {:ok, []}
+        end
       {:done, 4, res} -> # No results found
         case opts[:format] do
           "xml" -> {:ok, "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<messages></messages>"}
           "plain" -> {:ok, []}
           "json" -> {:ok, []}
         end
-      {_, _, _} -> {:error, []}
+      {err, error_code, error_msg} -> IO.inspect err: err, error_code: error_code, error_msg: error_msg; {:error, []}
     end
   end
 
@@ -37,7 +44,7 @@ defmodule Exmu do
     mu_executable = opts[:mu_bin_path]
     command = ["find", "--muhome=#{abs_mu_dir_path}", "maildir:/#{folder}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", "--maxnum=#{opts[:maxnum]}", ""]
     if opts[:debug] do
-      IO.puts "--- EXMU Debug ---"
+      IO.puts "--- EXMU Debug Read Folder---"
       IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
     end
     case :erlsh.run(to_char_list("#{mu_executable} #{Enum.join(command, " ")}")) do
@@ -65,12 +72,14 @@ defmodule Exmu do
     mu_executable = opts[:mu_bin_path]
     command = ["index", "--maildir=#{abs_mailbox_path}", "--muhome=#{abs_mu_dir_path}", opts[:other_mu_opts]]
     if opts[:debug] do
-      IO.puts "--- EXMU Debug ---"
+      IO.puts "--- EXMU Debug Index ---"
       IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
     end
     :ok = File.mkdir_p abs_mu_dir_path
-    :os.cmd(to_char_list("#{mu_executable} #{Enum.join(command, " ")}"))
-    :ok
+    case :erlsh.oneliner(to_char_list("#{mu_executable} #{Enum.join(command, " ")}")) do
+      {:done, 0, res} -> :ok
+      {err, error_code, error_msg} -> IO.inspect err: err, error_code: error_code, error_msg: error_msg; :error
+    end
   end
 
 
