@@ -90,8 +90,8 @@ defmodule Exmu do
     case System.cmd mu_executable, ["cfind", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", query] do
       {res, 0} -> res
       {_, 1} -> raise("Error with cfind. Mu index dir: #{abs_mu_dir_path}.")
-      {_, 2} -> []
-      {_, 4} -> []
+      {_, 2} -> "[]"
+      {_, 4} -> "[]"
     end
   end
 
