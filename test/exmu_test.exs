@@ -20,9 +20,9 @@ defmodule ExmuTest do
     mailbox_path = "test/mails/testing.com/abc/"
     mu_dir_path  = "test/mails/testing.com/abc/.mu"
     :ok = Exmu.index_emails(mailbox_path, mu_dir_path)
-    {:ok, res} = Exmu.read_folder(mu_dir_path, "MyFolder", format: "plain")
+    {:ok, res} = Exmu.read_folder(mu_dir_path, "/MyFolder", format: "plain", debug: true)
     assert Enum.count(res) == 1
-    {:ok, res} = Exmu.read_folder(mu_dir_path, "", format: "plain")
+    {:ok, res} = Exmu.read_folder(mu_dir_path, "/", format: "plain")
     assert Enum.count(res) == 5
   end
 

@@ -42,7 +42,7 @@ defmodule Exmu do
     opts = Keyword.merge(@default_opts, opts)
     abs_mu_dir_path = Path.expand(mu_dir_path)
     mu_executable = opts[:mu_bin_path]
-    command = ["find", "--muhome=#{abs_mu_dir_path}", "maildir:/#{folder}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", "--maxnum=#{opts[:maxnum]}", ""]
+    command = ["find", "--muhome=#{abs_mu_dir_path}", "maildir:#{folder}", "--format=#{opts[:format]}", "--sortfield=#{opts[:sortfield]}", "--reverse", "--maxnum=#{opts[:maxnum]}", ""]
     if opts[:debug] do
       IO.puts "--- EXMU Debug Read Folder---"
       IO.puts "#{mu_executable} #{Enum.join(command, " ")}"
@@ -50,15 +50,15 @@ defmodule Exmu do
     case :erlsh.run(to_char_list("#{mu_executable} #{Enum.join(command, " ")}")) do
       {:done, 0, res} ->
         case opts[:format] do
-          "xml" -> {:ok, to_string(res) |> String.strip}
+          "xml"   -> {:ok, to_string(res) |> String.strip}
           "plain" -> {:ok, to_string(res) |> String.strip |> String.split("\n")}
-          "json" -> {:ok, to_string(res) |> String.strip |> String.split("\n")}
+          "json"  -> {:ok, to_string(res) |> String.strip |> String.split("\n")}
         end
       {:done, 4, res} -> # No results found
         case opts[:format] do
-          "xml" -> {:ok, "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<messages></messages>"}
+          "xml"   -> {:ok, "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<messages></messages>"}
           "plain" -> {:ok, ""}
-          "json" -> {:ok, "[]"}
+          "json"  -> {:ok, "[]"}
         end
       {_, _, _} -> {:error, "[]"}
     end
@@ -90,8 +90,7 @@ defmodule Exmu do
     case System.cmd mu_executable, ["cfind", "--muhome=#{abs_mu_dir_path}", "--format=#{opts[:format]}", query] do
       {res, 0} -> res
       {_, 1} -> raise("Error with cfind. Mu index dir: #{abs_mu_dir_path}.")
-      {_, 2} -> "[]"
-      {_, 4} -> "[]"
+      {_, x} -> IO.puts("Error #{x} in fetching contacts"); "[]"
     end
   end
 
